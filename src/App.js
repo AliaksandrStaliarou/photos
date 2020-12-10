@@ -1,7 +1,32 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import photos from './photosData/photos'
+import { PhotoItemsList } from './components/PhotoItemsList';
 
-function App() {
+
+
+class App extends Component {
+    state = {
+        photos: photos,
+        photos2: photos.slice(),
+        class: '',
+    };
+    /*overlaySwitcher = (status) => {
+        this.setState({class: status})
+    };*/
+
+    render() {
+        return (
+            <section className="wrapper">
+                {/*<Overlay class={this.state.class}/>*/}
+                <PhotoItemsList overlaySwitcher={this.overlaySwitcher}/>
+            </section>
+        );
+    }
+
+}
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +45,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
