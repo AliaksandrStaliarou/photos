@@ -3,6 +3,7 @@ import { PhotoItemSmall } from'./PhotoItemSmall';
 import { PhotoItemBig } from'./PhotoItemBig';
 
 
+
 class PhotoItem extends React.Component {
     state = {
         expanded: false,
