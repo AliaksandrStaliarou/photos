@@ -1,7 +1,6 @@
-import React from "react";
+/*import React from "react";
 import { PhotoItemSmall } from'./PhotoItemSmall';
 import { PhotoItemBig } from'./PhotoItemBig';
-
 
 
 class PhotoItem extends React.Component {
@@ -16,12 +15,15 @@ class PhotoItem extends React.Component {
         if (expanded === false) {
             return(
                 <PhotoItemSmall   data={this.props.data}
+                                  onPreviewClick={this.props.onPreviewClick}
                                   condition={this.onClickFromSmallToBig}
-                                  overlaySwitcher={this.props.overlaySwitcher} />
+                                  /!*overlaySwitcher={this.props.overlaySwitcher}*!/ />
             )
         } else {
             return(
                 <PhotoItemBig   data={this.props.data}
+
+
                                 condition={this.onClickFromSmallToBig}
                                 overlaySwitcher={this.props.overlaySwitcher} />
             )
@@ -29,5 +31,5 @@ class PhotoItem extends React.Component {
     }
 }
 
-export { PhotoItem }
+export { PhotoItem }*/
 

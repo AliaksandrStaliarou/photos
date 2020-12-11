@@ -4,8 +4,7 @@ import photos from '../photosData/photos';
 // <img src={require('./images/shirt1_sm.jpg')} alt=""/>
 class PhotoItemSmall extends React.Component {
     state = {
-        data: photos,
-        dataph: photos.slice(),
+
     };
     /*onClickFromSmallToBig_And_Overlayer = () => {
         this.props.condition(this.state.expanded);
@@ -14,7 +13,7 @@ class PhotoItemSmall extends React.Component {
     render() {
         let item = this.props.data;
         return(
-                <div className="wrapper_common">
+                <div className="wrapper_common" onClick={this.props.onPreviewClick}>
                     <figure className="wrapper_picture">
                         <img src={item.image} alt=""/>
                             <figcaption>{item.title}</figcaption>
