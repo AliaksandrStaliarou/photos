@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import photos from './photosData/photos'
-import { PhotoItem } from './components/PhotoItem';
-import { PhotoItemBig } from './components/PhotoItemBig';
 import { PhotoItemSmall } from './components/PhotoItemSmall';
 
 
@@ -77,48 +75,6 @@ class App extends Component {
 
 }
 
-/*const PhotoItemSmall = (props) => {
-    const item = props.data;
-    return(
-        <div className="wrapper_common" onClick={props.onPreviewClick.bind(item)}>
-            <figure className="wrapper_picture">
-                <img src={item.image} alt=""/>
-                <figcaption>{item.title}</figcaption>
-            </figure>
-            <div className="wrapper_rating_label">
-                <div className="labels">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div className="rating">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    );
-};*/
-
-
-/*class Preview extends React.Component {
-    state = {
-        photos: photos,
-    };
-    render() {
-        return(
-            <div id="overlay">
-                <span className="close" onClick={props.onClose}>X</span>
-                <img src={this.state.photos.bigImage} alt=""/>
-                Big picture here
-            </div>
-        )
-    }
-
-}*/
 
 const Preview = (props) => {
     let item = props.data;
@@ -133,25 +89,6 @@ export default App;
 
 
 
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}*/
+
 
 
