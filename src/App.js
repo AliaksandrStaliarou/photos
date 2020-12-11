@@ -63,7 +63,7 @@ class App extends Component {
 
     render() {
         let photosList = photos.map(item =>
-            <PhotoItemSmall data={item} key={item.id} onPreviewClick={this.onPreviewClick.bind(this)}/>);
+            <PhotoItemSmall data={item} key={item.id} onPreviewClick={this.onPreviewClick.bind(this, item)}/>);
 
         return (
             <div className="wrapper">

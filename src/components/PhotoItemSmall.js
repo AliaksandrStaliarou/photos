@@ -13,7 +13,7 @@ class PhotoItemSmall extends React.Component {
     render() {
         let item = this.props.data;
         return(
-                <div className="wrapper_common" onClick={this.props.onPreviewClick.bind(item)}>
+                <div className="wrapper_common" onClick={this.props.onPreviewClick}>
                     <figure className="wrapper_picture">
                         <img src={item.image} alt=""/>
                             <figcaption>{item.title}</figcaption>
