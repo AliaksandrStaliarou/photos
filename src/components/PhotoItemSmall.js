@@ -37,5 +37,4 @@ class PhotoItemSmall extends React.Component {
     }
 }
 
-
 export { PhotoItemSmall }
