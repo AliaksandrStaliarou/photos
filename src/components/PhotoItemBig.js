@@ -14,11 +14,6 @@ class PhotoItemBig extends React.Component {
 }
 
 
-/*const Preview = (props) => {
-    return <div id="overlay">
-        <span className="close" onClick={props.onClose}>X</span>
-        Big picture here</div>;
-};*/
 
 
 export { PhotoItemBig }
