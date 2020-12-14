@@ -14,6 +14,4 @@ class PhotoItemBig extends React.Component {
 }
 
 
-
-
 export { PhotoItemBig }
