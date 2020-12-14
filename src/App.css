@@ -213,7 +213,7 @@ img {
 }
 
 @media (min-width: 1290px) {
-  .wrapper_picture p {
+  .wrapper_picture figcaption {
     font-size: 1.17em;
   }
 }
